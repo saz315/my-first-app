@@ -1,0 +1,286 @@
+.app-shell {
+  background: #f4f7fb;
+  color: #0f766e;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  border: none;
+  min-height: 100vh;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #0f766e, #115e59);
+  color: #f5f9ff;
+  padding: 2.25rem 1.5rem;
+}
+
+.header-content {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: end;
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.14rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+.app-header h1,
+.section-heading h2,
+.record-card h3,
+.submitted-card h2 {
+  margin: 0;
+  color: inherit;
+}
+
+.header-note {
+  max-width: 26rem;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+}
+
+.app-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.workspace-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(290px, 0.9fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.form-stack {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.filter-panel,
+.records-section,
+.form-section,
+.submitted-card {
+  background: #ffffff;
+  border: 1px solid #dfe8f3;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.04);
+  padding: 1.5rem;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: end;
+  margin-bottom: 1.25rem;
+}
+
+.helper-text,
+.result-count,
+.submitted-note {
+  margin: 0;
+  color: #5d6b7a;
+  font-size: 0.92rem;
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.filter-button {
+  border: 1px solid #dfe8f3;
+  background: #f5f8fc;
+  color: #1f2a37;
+  border-radius: 999px;
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-button:hover,
+.filter-button:focus-visible {
+  border-color: #7ea7dc;
+  outline: none;
+}
+
+.filter-button-active {
+  background: #0f766e;
+  border-color: #0f766e;
+  color: #fff;
+}
+
+.records-heading-row {
+  margin-bottom: 1rem;
+}
+
+.records-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.record-card {
+  border: 1px solid #dfe8f3;
+  border-radius: 14px;
+  background: #f9fbff;
+  padding: 1rem;
+}
+
+.record-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.record-id,
+.record-type {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.record-id {
+  background: #dfeefc;
+  color: #0f766e;
+}
+
+.record-type {
+  background: #e8f4eb;
+  color: #1e6f45;
+}
+
+.record-card h3 {
+  color: #1f2a37;
+  font-size: 1.12rem;
+  line-height: 1.4;
+}
+
+.record-meta {
+  margin: 0.8rem 0 0;
+}
+
+.record-meta div {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+.record-meta dt {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04rem;
+  text-transform: uppercase;
+  color: #5d6b7a;
+}
+
+.record-meta dd {
+  margin: 0;
+  color: #233149;
+}
+
+.treatment-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.treatment-form label {
+  display: grid;
+  gap: 0.45rem;
+  font-weight: 600;
+  color: #233149;
+}
+
+.treatment-form input,
+.treatment-form select {
+  border: 1px solid #cfdbe9;
+  border-radius: 10px;
+  padding: 0.75rem 0.875rem;
+  font: inherit;
+  background: #fff;
+  color: #1f2a37;
+}
+
+.treatment-form input:focus,
+.treatment-form select:focus {
+  outline: 2px solid rgba(29, 95, 183, 0.24);
+  border-color: #0f766e;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-error {
+  margin: 0;
+  border-radius: 10px;
+  background: #fff0f0;
+  border: 1px solid #f0b7b7;
+  color: #b42318;
+  padding: 0.75rem 0.9rem;
+}
+
+.primary-button {
+  border: none;
+  border-radius: 10px;
+  background: #0f766e;
+  color: #fff;
+  padding: 0.8rem 1rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submitted-list {
+  margin: 1rem 0 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.submitted-list div {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.submitted-list dt {
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  color: #607084;
+}
+
+.submitted-list dd {
+  margin: 0;
+  font-weight: 600;
+  color: #1f2a37;
+}
+
+@media (max-width: 860px) {
+  .header-content,
+  .section-heading {
+    display: grid;
+  }
+
+  .workspace-grid {
+    grid-template-columns: 1fr;
+  }
+}
